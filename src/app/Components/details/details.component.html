@@ -1,0 +1,20 @@
+
+@if(student){
+<div  class="alert alert-primary">
+    <h5 >{{ student.name }}</h5>
+    <h5>{{ student.city }}, {{ student.country }}</h5>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><strong>Gender: </strong>{{ student.gender }}</li>
+      <li class="list-group-item"><strong>Email: </strong>{{ student.email }}</li>
+      <li class="list-group-item"><strong>Phone: </strong>{{ student.phone }}</li>
+      <li class="list-group-item"><strong>Age: </strong>{{ student.age }}</li>
+      <li class="list-group-item"><strong>Address: </strong>{{ student.address }}</li>
+      <li class="list-group-item"><strong>Zip: </strong>{{ student.zip }}</li>
+      <li class="list-group-item"><strong>Courses: </strong>{{ student.courses }}</li>
+      <li class="list-group-item"><strong>GPA: </strong>{{ student.gpa }}</li>
+    </ul>
+</div>
+}
+@else {
+  <h1 class="alert alert-danger text-center mt-5" style="font-size: 2rem;">Loading...</h1>
+}

@@ -1,0 +1,9 @@
+
+
+<div class="alert alert-secondary" style="width: 500px;">
+  <ng-container *ngFor="let student of students">
+    <div class="mb-3">
+      <app-student [student]="student"></app-student>
+    </div>
+  </ng-container>
+</div>
